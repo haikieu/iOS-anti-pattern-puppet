@@ -13,14 +13,14 @@ iOS anti design pattern, puppet
 ###Cons : 
 
 + Violate traditional inheritance model
-+ Maybe impossible to implement by programming language limitation
++ Maybe get difficult / impossible to implement against programming language limitation
 + Must alternate class / object formal logic flow in run time.
 + Original flow may be damaged permanently in run-time and affect all its instance
 
 
 ------------------------------
 
-###Apply puppet pattern in iOS context
+###Puppet pattern idea in iOS context
 
 [logo]: https://raw.githubusercontent.com/haikieu/iOS-anti-pattern-puppet/master/iOS-anti-pattern-puppet.jpg
 ![alt iOS anti design pattern puppet](https://raw.githubusercontent.com/haikieu/iOS-anti-pattern-puppet/master/iOS-anti-pattern-puppet.jpg "iOS anti design pattern puppet")
