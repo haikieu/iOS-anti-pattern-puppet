@@ -20,7 +20,7 @@ iOS anti design pattern, puppet
 
 ------------------------------
 
-###Demostrate puppet pattern in iOS context when developer is going to customize the apple NSUserdefaults
+###Demostrate puppet pattern in iOS context
 
 [logo]: https://raw.githubusercontent.com/haikieu/iOS-anti-pattern-puppet/master/iOS-anti-pattern-puppet.jpg
 ![alt iOS anti design pattern puppet](https://raw.githubusercontent.com/haikieu/iOS-anti-pattern-puppet/master/iOS-anti-pattern-puppet.jpg "iOS anti design pattern puppet")
