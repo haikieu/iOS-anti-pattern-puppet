@@ -28,11 +28,11 @@ iOS anti design pattern, puppet
 
 
 
-
+------------------------------
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Hai Kieu
+#####Copyright (c) 2014 haikieu2907@gmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
