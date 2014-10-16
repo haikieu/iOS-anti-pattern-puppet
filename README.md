@@ -1,4 +1,4 @@
-iOS-anti-pattern-puppet
+iOS anti design pattern, puppet
 =======================
 
 [logo]: https://raw.githubusercontent.com/haikieu/iOS-anti-pattern-puppet/master/iOS-anti-pattern-puppet.jpg
