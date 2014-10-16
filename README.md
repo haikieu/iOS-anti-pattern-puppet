@@ -1,6 +1,27 @@
 iOS anti design pattern, puppet
 =======================
 
+#####Scenario : in case of upgrade existing business code by overriding the old as well as ability to reuse old implementation if necessary with minimizing code changes.
+
+###Pros : 
+
++ The previous source code of super class is no longer required
++ Keep original base class interface, minimizing code changes in existing consumer.
++ Ability to upgrade business logic in conjunction with reusing existing implementation
++ Reduce visible additional subclass in case declare it as private
+
+###Cons : 
+
++ Violate traditional inheritance model
++ Maybe impossible to implement by programming language limitation
++ Must alternate class / object formal logic flow in run time.
++ Original flow may be damaged permanently in run-time and affect all its instance
+
+
+------------------------------
+
+###Demostrate puppet pattern in real scenario, iOS platform
+
 [logo]: https://raw.githubusercontent.com/haikieu/iOS-anti-pattern-puppet/master/iOS-anti-pattern-puppet.jpg
 ![alt iOS anti design pattern puppet](https://raw.githubusercontent.com/haikieu/iOS-anti-pattern-puppet/master/iOS-anti-pattern-puppet.jpg "iOS anti design pattern puppet")
 
