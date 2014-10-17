@@ -14,6 +14,7 @@
 		8466781019F0DF3C00106C9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8466780F19F0DF3C00106C9A /* Images.xcassets */; };
 		8466781319F0DF3C00106C9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8466781119F0DF3C00106C9A /* LaunchScreen.xib */; };
 		8466781F19F0DF3C00106C9A /* PuppetAntiPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8466781E19F0DF3C00106C9A /* PuppetAntiPatternTests.m */; };
+		8466783A19F0E99400106C9A /* NSUserDefaults+CustomizeUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 8466783919F0E99400106C9A /* NSUserDefaults+CustomizeUserDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		8466781819F0DF3C00106C9A /* PuppetAntiPatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuppetAntiPatternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8466781D19F0DF3C00106C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8466781E19F0DF3C00106C9A /* PuppetAntiPatternTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuppetAntiPatternTests.m; sourceTree = "<group>"; };
+		8466783919F0E99400106C9A /* NSUserDefaults+CustomizeUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+CustomizeUserDefaults.m"; sourceTree = "<group>"; };
+		8466783B19F0EDE600106C9A /* NSUserDefaults+CustomizeUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+CustomizeUserDefaults.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		8466780119F0DF3C00106C9A /* PuppetAntiPattern */ = {
 			isa = PBXGroup;
 			children = (
+				8466782B19F0E3E300106C9A /* puppet */,
 				8466780619F0DF3C00106C9A /* AppDelegate.h */,
 				8466780719F0DF3C00106C9A /* AppDelegate.m */,
 				8466780919F0DF3C00106C9A /* ViewController.h */,
@@ -117,6 +121,16 @@
 				8466781D19F0DF3C00106C9A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8466782B19F0E3E300106C9A /* puppet */ = {
+			isa = PBXGroup;
+			children = (
+				8466783B19F0EDE600106C9A /* NSUserDefaults+CustomizeUserDefaults.h */,
+				8466783919F0E99400106C9A /* NSUserDefaults+CustomizeUserDefaults.m */,
+			);
+			name = puppet;
+			path = "../../Classes/anti-pattern/puppet";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +235,7 @@
 			files = (
 				8466780B19F0DF3C00106C9A /* ViewController.m in Sources */,
 				8466780819F0DF3C00106C9A /* AppDelegate.m in Sources */,
+				8466783A19F0E99400106C9A /* NSUserDefaults+CustomizeUserDefaults.m in Sources */,
 				8466780519F0DF3C00106C9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
