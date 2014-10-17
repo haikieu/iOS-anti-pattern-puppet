@@ -9,6 +9,8 @@ iOS anti design pattern, puppet
 + Keep original base class interface, minimizing code changes in existing consumer.
 + Ability to upgrade business logic in conjunction with reusing existing implementation
 + Reduce visible additional subclass in case declare it as private
++ No conflict with catagory.
++ Keep traditional keep inheritance classes work flow.
 
 ###Cons : 
 
@@ -16,6 +18,7 @@ iOS anti design pattern, puppet
 + Maybe get difficult / impossible to implement against programming language limitation
 + Must alternate class / object formal logic flow in run time.
 + Original flow may be damaged permanently in run-time and affect all its instance
++ Must take careful in implementing progress
 
 
 ------------------------------
