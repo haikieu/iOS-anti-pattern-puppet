@@ -11,7 +11,7 @@
 #import <objc/message.h>
 
 //A flag is required in load state
-#define LOAD_CUSTOMIZE 1
+#define OVERRIDE_BASE_CREATIONAL_BEHAVIOR 1
 
 @implementation NSUserDefaults(CustomizeUserDefaults)
 
@@ -33,13 +33,22 @@
 //load method is invoked automatically at first startup
 +(void)load
 {
-#if LOAD_CUSTOMIZE
+#if OVERRIDE_BASE_CREATIONAL_BEHAVIOR
     
-    IMP method2 = method_getImplementation(class_getClassMethod([CustomizeUserDefaults class], @selector(standardUserDefaults)));
-    
-    method_setImplementation(class_getClassMethod([NSUserDefaults class], @selector(standardUserDefaults)), method2);
+    [self overrideBaseCreationalBehavior];
     
 #endif
+}
+
++(void)overrideBaseCreationalBehavior
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        
+        IMP overrideMethod = method_getImplementation(class_getClassMethod([CustomizeUserDefaults class], @selector(standardUserDefaults)));
+        
+        method_setImplementation(class_getClassMethod([NSUserDefaults class], @selector(standardUserDefaults)), overrideMethod);
+    });
 }
 
 //the private child class's instance is return in real scenario
