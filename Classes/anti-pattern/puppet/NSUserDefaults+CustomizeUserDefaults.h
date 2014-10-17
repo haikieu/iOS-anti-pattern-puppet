@@ -12,4 +12,6 @@
 
 // No header file is required, the implementation file is automatically loaded
 
+-(void) doExtendBusiness;
+
 @end

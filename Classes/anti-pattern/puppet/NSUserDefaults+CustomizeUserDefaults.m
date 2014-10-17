@@ -15,6 +15,11 @@
 
 @implementation NSUserDefaults(CustomizeUserDefaults)
 
+-(void)doExtendBusiness
+{
+    //Ability to extend base class's behavior
+}
+
 @end
 
 @interface CustomizeUserDefaults : NSUserDefaults
@@ -61,5 +66,12 @@ static id __obj;
     id obj = [super objectForKey:defaultName];
     return obj;
 }
+
+-(void)doExtendBusiness
+{
+    [super doExtendBusiness];
+    //Child class inherits extend base class's behavior
+}
+
 
 @end

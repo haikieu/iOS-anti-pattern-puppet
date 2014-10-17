@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "NSUserDefaults+CustomizeUserDefaults.h"
 @interface AppDelegate ()
 
 
@@ -22,6 +22,7 @@
     NSUserDefaults * pref = [NSUserDefaults standardUserDefaults];
     [pref setObject:@"data" forKey:@"key"];
     id data = [pref objectForKey:@"key"];
+    [pref doExtendBusiness];
     
     return YES;
 }
