@@ -17,11 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     
+    //Nothing change
     NSUserDefaults * pref = [NSUserDefaults standardUserDefaults];
+    
     [pref setObject:@"data" forKey:@"key"];
+    
     id data = [pref objectForKey:@"key"];
+    
+    //Compatible to category
     [pref doExtendBusiness];
     
     return YES;
