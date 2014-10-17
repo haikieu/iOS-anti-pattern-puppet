@@ -40,6 +40,7 @@
 #endif
 }
 
+#warning should override static creational method only! DON'T SWIZZLE alloc, init
 +(void)overrideBaseCreationalBehavior
 {
     static dispatch_once_t onceToken;
