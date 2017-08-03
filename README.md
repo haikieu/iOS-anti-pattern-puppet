@@ -1,21 +1,22 @@
 iOS anti design pattern, puppet
 =======================
 
-#####Scenario : in case of upgrade existing business code by overriding the old as well as ability to reuse old implementation if necessary with minimizing code changes.
+#####Some applying scenarios : 
+  + Don't want to alternate the current implementation
+  + Don't want to change developers behavior by providing them new method, new api to do some more extra business
+  + Want to upgrade existing bussiness implementation with minimum of code changes.
 
 ###Pros : 
-
-+ The previous source code of super class is no longer required
-+ Keep original base class interface, minimizing code changes in existing consumer.
-+ Ability to upgrade business logic in conjunction with reusing existing implementation
-+ Reduce visible additional subclass in case declare it as private
+  + The previous source code of super class is no longer required
+  + Keep original base class interface, minimizing code changes in existing consumer.
+  + Ability to upgrade business logic in conjunction with reusing existing implementation
+  + Reduce visible additional subclass in case declare it as private
 
 ###Cons : 
-
-+ Violate traditional inheritance model
-+ Maybe get difficult / impossible to implement against programming language limitation
-+ Must alternate class / object formal logic flow in run time.
-+ Should deploy anti-pattern on the static creational method ONLY!
+  + Violate traditional inheritance model
+  + Maybe get difficult / impossible to implement against programming language limitation
+  + Must alternate class / object formal logic flow in run time.
+  + Should deploy anti-pattern on the static creational method ONLY!
 
 
 ------------------------------
